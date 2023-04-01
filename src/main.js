@@ -13,4 +13,5 @@ import router from "./routers/router";
 
 const app = createApp(App);
 app.use(router);
+app.use(VueSidebarMenu);
 app.mount("#app");
