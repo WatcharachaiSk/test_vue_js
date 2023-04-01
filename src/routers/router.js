@@ -1,8 +1,16 @@
-import VueRouter from "vue-router";
-import routes from "./routers";
+import { createApp } from "vue";
+import { createRouter, createWebHistory } from "vue-router";
 
-const router = new VueRouter({
-  mode: "history",
+import Home from "../pages/Home.vue";
+import About from "../pages/About.vue";
+
+const routes = [
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
   routes,
 });
 

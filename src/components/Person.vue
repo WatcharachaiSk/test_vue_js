@@ -24,10 +24,10 @@ export default {
 <!--  -->
 <template>
   <div>
-    <sapn>
-      - ชื่อพนักงาน {{ nameEmp }} เงินเดือน
+    <li>
+      ชื่อพนักงาน {{ nameEmp }} เงินเดือน
       {{ salary }}
-    </sapn>
+    </li>
   </div>
 </template>
 <!--  -->
