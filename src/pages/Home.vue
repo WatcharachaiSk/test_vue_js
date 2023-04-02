@@ -29,7 +29,7 @@ export default {
   <section>
     <FormData />
     <!--  -->
-    <ListData :dataEmployees="dataEmployees" />
+    <!-- <ListData class="mt-3" :dataEmployees="dataEmployees" /> -->
   </section>
   <!--  -->
 </template>

@@ -9,7 +9,7 @@ export default {
         hiddenOnCollapse: true,
       },
       {
-        title: "Dashboard",
+        title: "Add Employee",
         href: "/",
         icon: "fa-solid fa-house",
       },
@@ -30,7 +30,7 @@ export default {
     <div class="sidebar-container">
       <sidebar-menu :menu="menu" />
     </div>
-    <div class="content-container">
+    <div class="content my-3">
       <!-- Your other content here -->
       <router-view />
     </div>
@@ -40,17 +40,17 @@ export default {
 <!--  -->
 <style scoped>
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 }
 
-.sidebar-container {
-  width: 60px; /* Adjust the width as needed */
+.sidebar-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.content-container {
+.content {
   /* background: red; */
-  /* Apply appropriate styles to avoid overlapping with SidebarMenu */
-  flex-grow: 1;
+ margin-left: 55px;
 }
 </style>
