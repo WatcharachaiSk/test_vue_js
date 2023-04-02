@@ -24,7 +24,7 @@ export default {
 <!--  -->
 <template>
   <header>
-    <h1 class="center">ระบบจัดการพนักงาน</h1>
+    <h1 class="">ระบบจัดการพนักงาน</h1>
   </header>
   <section>
     <FormData />
