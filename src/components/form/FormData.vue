@@ -80,6 +80,17 @@ export default {
         <button type="submit" :class="[inputForm, 'boxButton']">บันทึก</button>
       </div>
     </form>
+    <!--  -->
+    <!-- <form>
+      <label for="salaryEmp" class="form-label">Password</label>
+      <input
+        ref="password"
+        type="password"
+        class="form-control"
+        id="name"
+        placeholder="password"
+      />
+    </form> -->
     <div class="my-3">
       <div class="center">
         <h3>แสดงรายชื่อพนักงาน</h3>
