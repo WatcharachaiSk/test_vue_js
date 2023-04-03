@@ -2,6 +2,8 @@ import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
 //
+import "./index.css";
+import 'tailwindcss/tailwind.css'
 
 import SidebarMenu from "vue-sidebar-menu";
 import "vue-sidebar-menu/dist/vue-sidebar-menu.css";

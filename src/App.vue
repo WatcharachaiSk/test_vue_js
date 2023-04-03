@@ -9,9 +9,19 @@ export default {
         hiddenOnCollapse: true,
       },
       {
+        title: "Who Posts",
+        href: "/posts",
+        icon: "fa-solid fa-inbox",
+      },
+      {
         title: "Add Employee",
         href: "/",
         icon: "fa-solid fa-house",
+      },
+      {
+        title: "User",
+        href: "/user",
+        icon: "fa-solid fa-user",
       },
       {
         title: "About",
@@ -19,7 +29,7 @@ export default {
         icon: "fa-solid fa-address-card",
       },
     ]);
-
+    // <i class="fa-duotone fa-mailbox"></i>
     return { menu };
   },
 };
@@ -51,6 +61,6 @@ export default {
 
 .content {
   /* background: red; */
- margin-left: 55px;
+  margin-left: 55px;
 }
 </style>
