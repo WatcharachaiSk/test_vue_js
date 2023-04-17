@@ -1,14 +1,6 @@
 <template>
-  <div>
-    <h1>About</h1>
-  </div>
+	<main id="about-page">
+		<h1>About</h1>
+		<p>This is the about page</p>
+	</main>
 </template>
-<script>
-export default {
-  name: "About",
-  data() {
-    return {};
-  },
-};
-</script>
-<style></style>

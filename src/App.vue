@@ -1,66 +1,62 @@
-<script>
-import SidebarMenu from "vue-sidebar-menu";
-import { ref } from "vue";
-export default {
-  setup() {
-    const menu = ref([
-      {
-        header: "Vue Js Test",
-        hiddenOnCollapse: true,
-      },
-      {
-        title: "Who Posts",
-        href: "/posts",
-        icon: "fa-solid fa-inbox",
-      },
-      {
-        title: "Add Employee",
-        href: "/",
-        icon: "fa-solid fa-house",
-      },
-      {
-        title: "User",
-        href: "/user",
-        icon: "fa-solid fa-user",
-      },
-      {
-        title: "About",
-        href: "/about",
-        icon: "fa-solid fa-address-card",
-      },
-    ]);
-    // <i class="fa-duotone fa-mailbox"></i>
-    return { menu };
-  },
-};
+<script setup>
+import Sidebar from "./components/sidebar/Sidebar.vue";
 </script>
+
 <!--  -->
 <template>
-  <div class="container">
-    <div class="sidebar-container">
-      <sidebar-menu :menu="menu" />
-    </div>
-    <div class="content my-3">
-      <!-- Your other content here -->
-      <router-view />
-    </div>
+  <div class="app">
+    <!-- Sidebar -->
+    <Sidebar />
+
+    <!-- Content -->
+    <router-view />
   </div>
 </template>
 
 <!--  -->
-<style scoped>
-.container {
-  position: relative;
+<style lang="scss">
+:root {
+  --primary: #4ade80;
+  --primary-alt: #22c55e;
+  --grey: #64748b;
+  --grey9: #999999;
+  --blue00:#002664:
+  --blue-click:#002664:
+  --dark: #1e293b;
+  --dark-alt: #334155;
+  --light: #f1f5f9;
+  --sidebar-width: 300px;
 }
 
-.sidebar-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
 }
 
-.content {
-  /* background: red; */
-  margin-left: 55px;
+body {
+  background: var(--light);
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.app {
+  display: flex;
+
+  main {
+    flex: 1 1 0;
+    padding: 2rem;
+
+    @media (max-width: 1024px) {
+      padding-left: 6rem;
+    }
+  }
 }
 </style>

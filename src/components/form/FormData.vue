@@ -20,7 +20,7 @@ export default {
   methods: {
     inputFormChanged() {
       // console.log(this.$refs.nameEmp.value);
-      if (this.$refs.nameEmp.value && this.$refs.salaryEmp.value) {
+      if (this.$refs.nameEmp.value && this.$refs.salaryEmp.value) { 
         return [
           (this.inputForm = "btn btn-success"),
           (this.isSubmitted = true),
