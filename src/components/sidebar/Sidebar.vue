@@ -204,9 +204,9 @@ aside {
     }
   }
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     position: absolute;
     z-index: 99;
-  }
+  } */
 }
 </style>
